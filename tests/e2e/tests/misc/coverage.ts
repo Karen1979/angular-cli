@@ -5,8 +5,7 @@ import {ng} from '../../utils/process';
 
 
 export default function () {
-  // TODO(architect): reenable, validate, then delete this test. It is now in devkit/build-webpack.
-  return;
+  // TODO(architect): Delete this test. It is now in devkit/build-webpack.
 
   return ng('test', '--watch=false', '--code-coverage')
     .then(() => expectFileToExist('coverage/src/app'))
